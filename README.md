@@ -1,3 +1,3 @@
-## Calculator
+# Calculator
 
 Calculator built in JavaScript
