@@ -1,3 +1,3 @@
 # Calculator
 
-Calculator built in HTML, CSS and JavaScript
+SImple calculator built in HTML, CSS and JavaScript
