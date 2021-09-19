@@ -47,7 +47,7 @@ const calculate = () => {
    currentOperation = action;
    operation = undefined;
    previousOperation = '';
-}
+};
 
 const chooseOperation = operator => {
    if (currentOperation === '') {
@@ -64,7 +64,7 @@ const chooseOperation = operator => {
    operation = operator;
    previousOperation = currentOperation;
    currentOperation = '';
-}
+};
 
 const updateResult = () => {
    currentResult.textContent = currentOperation;
@@ -73,7 +73,7 @@ const updateResult = () => {
    } else {
       previousResult.textContent = '';
    }
-}
+};
 
 const addNumber = number => {
    if (number == '.') {
@@ -83,43 +83,43 @@ const addNumber = number => {
       number = '.';
    }
    currentOperation = currentOperation.toString() + number.toString();
-}
+};
 
 const removeNumber = () => {
    currentOperation = currentOperation.toString().slice(0, -1);
-}
+};
 
 const clearResult = () => {
    currentOperation = '';
    previousOperation = '';
    operation = undefined;
-}
+};
 
 numbers.forEach(number => {
    number.addEventListener('click', () => {
       addNumber(number.textContent);
       updateResult();
-   })
-})
+   });
+});
 
 backspace.addEventListener('click', () => {
    removeNumber();
    updateResult();
-})
+});
 
 operators.forEach(operator => {
    operator.addEventListener('click', () => {
       chooseOperation(operator.textContent);
       updateResult();
-   })
-})
+   });
+});
 
 equal.addEventListener('click', () => {
    calculate();
    updateResult();
-})
+});
 
 clear.addEventListener('click', () => {
    clearResult();
    updateResult();
-})
+});
