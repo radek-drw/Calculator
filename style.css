@@ -56,10 +56,11 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: flex-end;
-   /* padding: 10px;
+   /* TO BE FIXED */
+   padding: 10px;
    border-radius: 24px 24px 10px 10px;
    background-color: #ebecf1;
-   box-shadow: inset 1.5px 1.5px 3px #cbcbcb, inset -1.5px -1.5px 3px #ffffff; */
+   box-shadow: inset 1.5px 1.5px 3px #cbcbcb, inset -1.5px -1.5px 3px #ffffff;
    border: 1px solid red;
 }
 .previous-action {
