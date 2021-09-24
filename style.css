@@ -63,7 +63,7 @@ body {
    box-shadow: inset 1.5px 1.5px 3px #cbcbcb, inset -1.5px -1.5px 3px #ffffff;
    border: 1px solid red;
 }
-.previous-action {
+.display__previous-action {
    font-size: 1.4em;
    border: 1px solid green;
    height: 30px;
@@ -71,7 +71,7 @@ body {
    color: #788;
 }
 
-.current-action {
+.display__current-action {
    border: 1px solid blue;
    height: 40px;
    line-height: 40px;
