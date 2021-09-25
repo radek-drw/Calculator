@@ -3,8 +3,8 @@ const operators = document.querySelectorAll('.buttons__operator');
 const clear = document.querySelector('.buttons__clear');
 const backspace = document.querySelector('.buttons__backspace');
 const equal = document.querySelector('.buttons__equal');
-const previousResult = document.querySelector('.previous-action');
-const currentResult = document.querySelector('.current-action');
+const previousResult = document.querySelector('.display__previous-action');
+const currentResult = document.querySelector('.display__current-action');
 
 let currentOperation = '';
 let previousOperation = '';

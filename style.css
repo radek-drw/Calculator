@@ -44,7 +44,7 @@ body {
    height: 480px;
    padding: 20px;
    display: grid;
-   grid-template-rows: auto 1fr;
+   grid-template-rows: 70px 1fr;
    row-gap: 40px;
    font-family: "Nova Round";
    background: #ebecf1;
@@ -53,31 +53,27 @@ body {
 }
 .display {
    font-size: 10px;
-   height: 70px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-end;
-   /* TO BE FIXED */
-   padding: 10px;
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+   justify-content: end;
+   padding: 5px 14px;
    border-radius: 24px 24px 10px 10px;
    background-color: #ebecf1;
    box-shadow: inset 1.5px 1.5px 3px #cbcbcb, inset -1.5px -1.5px 3px #ffffff;
-   border: 1px solid red;
 }
 .display__previous-action {
    font-size: 1.4em;
-   border: 1px solid green;
-   height: 30px;
-   line-height: 30px;
    color: #788;
 }
 
 .display__current-action {
-   border: 1px solid blue;
-   height: 40px;
-   line-height: 40px;
    font-size: 2.8em;
+}
+.display__previous-action,
+.display__current-action {
+   display: flex;
+   align-items: center;
+   justify-self: end;
 }
 
 .buttons {
@@ -97,7 +93,14 @@ button {
    line-height: 50px;
    font-size: 1.4rem;
    color: #333;
-   box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
+   /* box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff; */
+   transition: box-shadow 0.4s;
+}
+
+button:hover {
+   box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.8),
+      inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+   /* background-color: green; */
 }
 
 .zero-col-two {
