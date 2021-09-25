@@ -11,10 +11,10 @@
 } */
 
 body {
+   height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
    background: linear-gradient(
       -45deg,
       #fa8bff,
@@ -24,7 +24,7 @@ body {
       #fbda61
    );
    background-size: 800% 800%;
-   /* animation: gradient 40s ease infinite; */
+   animation: gradient 40s ease infinite;
 }
 
 @keyframes gradient {
@@ -41,10 +41,10 @@ body {
 
 .calculator {
    width: 300px;
-   height: 480px;
+   min-height: 480px;
    padding: 20px;
    display: grid;
-   grid-template-rows: 70px 1fr;
+   grid-template-rows: auto 1fr;
    row-gap: 40px;
    font-family: "Nova Round";
    background: #ebecf1;
@@ -56,7 +56,7 @@ body {
    display: grid;
    grid-template-rows: 1fr 2fr;
    justify-content: end;
-   padding: 5px 14px;
+   padding: 10px 14px;
    border-radius: 24px 24px 10px 10px;
    background-color: #ebecf1;
    box-shadow: inset 1.5px 1.5px 3px #cbcbcb, inset -1.5px -1.5px 3px #ffffff;
@@ -67,7 +67,7 @@ body {
 }
 
 .display__current-action {
-   font-size: 2.8em;
+   font-size: 3.6em;
 }
 .display__previous-action,
 .display__current-action {
@@ -93,14 +93,12 @@ button {
    line-height: 50px;
    font-size: 1.4rem;
    color: #333;
-   /* box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff; */
-   transition: box-shadow 0.4s;
+   box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
 }
 
 button:hover {
    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.8),
       inset 2px 2px 6px rgba(0, 0, 0, 0.1);
-   /* background-color: green; */
 }
 
 .zero-col-two {
