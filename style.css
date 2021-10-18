@@ -44,7 +44,7 @@ body {
    min-height: 480px;
    padding: 20px;
    display: grid;
-   grid-template-rows: auto 1fr;
+   grid-template-rows: 90px 1fr;
    row-gap: 40px;
    font-family: "Nova Round";
    background: #ebecf1;
