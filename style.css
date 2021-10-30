@@ -6,10 +6,6 @@
    box-sizing: border-box;
 }
 
-/* :root {
-   
-} */
-
 body {
    height: 100vh;
    display: flex;
@@ -40,11 +36,10 @@ body {
 }
 
 .calculator {
-   width: 300px;
-   min-height: 480px;
+   width: 270px;
    padding: 20px;
    display: grid;
-   grid-template-rows: 90px 1fr;
+   grid-template-rows: 80px 1fr;
    row-gap: 40px;
    font-family: "Nova Round";
    background: #ebecf1;
@@ -52,7 +47,7 @@ body {
    border-radius: 24px;
 }
 .display {
-   font-size: 10px;
+   font-size: 9px;
    display: grid;
    grid-template-rows: 1fr 2fr;
    justify-content: end;
@@ -78,8 +73,8 @@ body {
 
 .buttons {
    display: grid;
-   grid-template-columns: repeat(4, 50px);
-   grid-template-rows: repeat(5, 50px);
+   grid-template-columns: repeat(4, 45px);
+   grid-template-rows: repeat(5, 45px);
    justify-content: center;
    align-content: center;
    gap: 15px;
@@ -90,7 +85,7 @@ button {
    background-color: #ebecf1;
    border: none;
    font-family: "Nova Round";
-   line-height: 50px;
+   line-height: 45px;
    font-size: 1.4rem;
    color: #333;
    box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
